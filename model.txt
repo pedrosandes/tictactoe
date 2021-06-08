@@ -1,0 +1,7 @@
+TOP LEFT    | TOP    | TOP RIGHT
+------------------------------------
+LEFT        | SQUARE | RIGHT
+------------------------------------
+BOTTOM LEFT | BOTTOM | BOTTOM RIGHT
+
+TODOS RECEBEM POR PADRÃO O SQUARE (quadrado).

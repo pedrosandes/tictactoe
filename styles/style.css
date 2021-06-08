@@ -1,0 +1,97 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #272727;
+  font-family: 'Arial';
+  color: #fff;
+}
+
+/* GAME LAYOUT */
+
+.layout {
+  display: flex;
+  justify-content: space-around;
+  min-height: 100vh;
+}
+
+.aside {
+  flex: 1;
+}
+
+/* MAIN GAME  */
+main {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  margin-left: 20px;
+}
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 200px));
+  gap: 10px;
+  background-color: white;
+}
+.squares {
+  width: 100%;
+  height: 200px;
+  background-color: #272727;
+  display: grid;
+  place-items: center;
+}
+
+.o {
+  content: '';
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #272727;
+  border: 10px solid #fff;
+  transition: all 0.4s ease;
+}
+
+.x {
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+.x::after,
+.x::before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 170px;
+  height: 10px;
+  background: #fff;
+  transform: rotate(45deg);
+  top: 100px;
+  left: 25px;
+}
+.x::after {
+  transform: rotate(-45deg);
+}
+
+/* INFO GAME */
+
+.c-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+.jogar-novamente {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
