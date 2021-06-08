@@ -8,8 +8,8 @@ iniciaJogo();
 function iniciaJogo() {
   const espacos = document.querySelectorAll('.squares');
 
-  for (i = 0; i < espacos.length; i++) {
-    espacos[i].addEventListener('click', function () {
+  for (let espaco of espacos) {
+    espaco.addEventListener('click', function () {
       if (fimDeJogo) {
         return;
       }
